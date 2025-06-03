@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,user-scalable=no,minimum-scale=1.0,maximum-scale=1.0">
+	<title>Three - DMJX</title>
+	<link rel="stylesheet" href="/styles.css">
+	<script type="importmap">
+		{
+			"imports": {
+				"three": "/build/three.module.js",
+				"three/examples/": "/examples/",
+				"three/addons/": "/examples/jsm/",
+				"lil-gui": "https://cdn.jsdelivr.net/npm/lil-gui@0.19.2/+esm"
+			}
+		}
+	</script>
+  <script type="module" crossorigin src="/assets/index-ClyjPVPC.js"></script>
+</head>
+
+<body>
+	<!--intro popup markup -->
+	<div id="popup-box">
+		<div class="popup-blur-background"></div>
+		<div class="popup-content">
+		  <h2>Velkommen til kaffemik!</h2>
+		  <p>
+			Her samles vi om kage, kaffe og fortællinger fra hverdagen.<br><br>
+			Du er inviteret indenfor i et grønlandsk hjem for at opleve vores traditioner på tæt hold.<br><br>
+			Klik på de fremhævede ting i rummet og lær mere om grønlands kultur, natur og livsstil.<br><br>
+		</p>
+		  <button id="start-visit-btn">Start dit besøg</button>
+		</div>
+	  </div>
+	  
+	<!--raycaster popup markup -->
+	  <div id="info-popup" class="info-popup">
+		<div class="popup-content">
+		  <h2 id="popup-title"></h2>
+		  <p id="popup-text"></p>
+		  <div id="preview-container" class="preview-3d"></div>
+		  <button id="popup-close">Luk</button>
+		</div>
+	  </div>
+	  
+	<!--loading screen markup -->
+	<div id="loading-screen">
+		<div class="loader">Indlæser kaffemik...</div>
+	</div>
+
+	<!-- three.js canvas -->
+	<canvas id="three"></canvas>
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+	+ 
+</body>
+</html>
